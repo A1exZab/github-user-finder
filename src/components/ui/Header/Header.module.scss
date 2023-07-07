@@ -1,0 +1,39 @@
+:global {
+	body[data-theme='light'] {
+		--header-color: var(--gray-300);
+	}
+
+	body[data-theme='dark'] {
+		--header-color: var(--white);
+	}
+}
+
+.header {
+	margin: 35px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	span {
+		color: var(--header-color);
+	}
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+
+	& > :last-child {
+		color: var(--header-color);
+		font-size: 0.75rem;
+		text-align: right;
+	}
+}
+
+.title {
+	color: var(--header-color);
+	font-size: 1.75rem;
+	line-height: 1;
+	padding-bottom: 0;
+	font-weight: 700;
+}

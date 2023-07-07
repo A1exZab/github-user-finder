@@ -1,0 +1,13 @@
+:global {
+	body[data-theme='light'] {
+		--search-color: var(--gray-300);
+	}
+
+	body[data-theme='dark'] {
+		--search-color: var(--white);
+	}
+}
+
+.loading {
+	color: var(--search-color);
+}
